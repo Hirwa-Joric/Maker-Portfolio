@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "filename": "console_as_built.kicad_pro",
+    "version": 3
+  },
+  "schematic": {
+    "drawing": {
+      "hop_over_size_choice": 2
+    }
+  }
+}

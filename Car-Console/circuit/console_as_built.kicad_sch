@@ -1,0 +1,5417 @@
+(kicad_sch
+	(version 20260101)
+	(generator "console_circuit_builder")
+	(generator_version "1.0")
+	(uuid "4366f3f6-10ca-57a8-a458-29031ebff6e9")
+	(paper "A3")
+	(title_block
+		(title "Custom Aftermarket Car Center Console Upgrade - As-built")
+		(date "2026-10-03")
+		(rev "B")
+		(company "Console design and build documentation")
+		(comment 1 "Date drawn: 2026-10-03")
+		(comment 2 "Installed-wiring documentation; hidden connections are inferred")
+		(comment 3 "Solid wire = seen in photos, dashed wire = inferred; values approximate")
+		(comment 4 "Removable console panel; drawing documents the completed build")
+	)
+	(lib_symbols
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "console_as_built:CAR_12V_OUTLET"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.508)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "CAR"
+				(at -3.81 8.255 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Car 12 V outlet (factory)"
+				(at -3.81 -8.255 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Car's own 12 V outlet, lower centre stack; likely live only with ignition on"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "CAR_12V_OUTLET_1_1"
+				(rectangle
+					(start -12.7 6.35)
+					(end 5.08 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -3.81 0)
+					(radius 4.2)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -3.81 0)
+					(radius 1.1)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(text "+"
+					(at 3.3 2.54 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "-"
+					(at 3.3 -2.54 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10.16 2.54 180)
+					(length 5.08)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10.16 -2.54 180)
+					(length 5.08)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "console_as_built:FUSED_CIG_PLUG"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.508)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "P"
+				(at 0 8.255 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fused 12 V cigarette plug"
+				(at 0 -8.255 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Right-angle fused 12 V cigarette plug with long lead; fuse in the unscrewing tip, value unknown"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "FUSED_CIG_PLUG_1_1"
+				(rectangle
+					(start -10.16 6.35)
+					(end 10.16 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.16 2.54)
+						(xy -3.81 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -3.81 3.556)
+					(end 3.81 1.524)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 2.54)
+						(xy 3.81 2.54)
+					)
+					(stroke
+						(width 0.15)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 2.54)
+						(xy 10.16 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.16 -2.54)
+						(xy 10.16 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "fuse ? A"
+					(at 0 5 0)
+					(effects
+						(font
+							(size 1.4 1.4)
+							(bold yes)
+						)
+					)
+				)
+				(text "tip +"
+					(at -9.5 0.85 0)
+					(effects
+						(font
+							(size 1.4 1.4)
+						)
+						(justify left)
+					)
+				)
+				(text "shell -"
+					(at -9.5 -4 0)
+					(effects
+						(font
+							(size 1.4 1.4)
+						)
+						(justify left)
+					)
+				)
+				(pin passive line
+					(at -15.24 2.54 0)
+					(length 5.08)
+					(name "TIP+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -15.24 -2.54 0)
+					(length 5.08)
+					(name "SHELL-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 2.54 180)
+					(length 5.08)
+					(name "OUT+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -2.54 180)
+					(length 5.08)
+					(name "OUT-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "console_as_built:FEED_CABLE_2C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.508)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "W"
+				(at 0 6.985 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Feed cable, brown/blue"
+				(at 0 -6.985 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Round black two-core cable, brown (+) and blue (-), ~0.5-0.75 mm2"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "FEED_CABLE_2C_1_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.16 2.54)
+						(xy 10.16 2.54)
+					)
+					(stroke
+						(width 0.35)
+						(type default)
+						(color 140 80 20 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.16 -2.54)
+						(xy 10.16 -2.54)
+					)
+					(stroke
+						(width 0.35)
+						(type default)
+						(color 0 80 220 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "brown +"
+					(at 0 3.85 0)
+					(effects
+						(font
+							(size 1.4 1.4)
+						)
+					)
+				)
+				(text "blue -"
+					(at 0 -3.85 0)
+					(effects
+						(font
+							(size 1.4 1.4)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 2.54 0)
+					(length 2.54)
+					(name "BROWN_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -2.54 0)
+					(length 2.54)
+					(name "BLUE_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 2.54 180)
+					(length 2.54)
+					(name "BROWN_OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -2.54 180)
+					(length 2.54)
+					(name "BLUE_OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "console_as_built:USB_PD_QC_SOCKET"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.508)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "X"
+				(at 8.89 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Dual USB socket PD/QC"
+				(at 8.89 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Round 12/24 V panel socket: USB-C PD + USB-A QC3.0; blue LED ring lights only when powered"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "USB_PD_QC_SOCKET_1_1"
+				(rectangle
+					(start -7.62 7.62)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 5.7)
+					(stroke
+						(width 0.5)
+						(type default)
+						(color 0 90 255 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.9 2.6)
+					(end 1.9 1.3)
+					(stroke
+						(width 0.15)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.8 -0.9)
+					(end 2.8 -2.7)
+					(stroke
+						(width 0.15)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "C"
+					(at 0 3.85 0)
+					(effects
+						(font
+							(size 1.4 1.4)
+						)
+					)
+				)
+				(text "A"
+					(at 0 -3.95 0)
+					(effects
+						(font
+							(size 1.4 1.4)
+						)
+					)
+				)
+				(text "+"
+					(at 1.5 9.6 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "-"
+					(at 1.5 -9.6 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(pin passive line
+					(at 0 12.7 270)
+					(length 5.08)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 90)
+					(length 5.08)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "console_as_built:SOCKET_12V_ACC"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.508)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "X"
+				(at 8.89 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "12 V accessory socket"
+				(at 8.89 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Cigarette-lighter type 12 V socket: centre +, shell -; red trim ring never lit; not a switch"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SOCKET_12V_ACC_1_1"
+				(rectangle
+					(start -7.62 7.62)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 6.1)
+					(stroke
+						(width 0.3)
+						(type default)
+						(color 220 0 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 4.6)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.9)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(text "+"
+					(at 1.5 9.6 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "-"
+					(at 1.5 -9.6 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(pin passive line
+					(at 0 12.7 270)
+					(length 5.08)
+					(name "CENTRE+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 90)
+					(length 5.08)
+					(name "SHELL-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "console_as_built:PLUG_2PIN_INLINE"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.508)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "2-pin plug (JST-SM style)"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Small 2-pin in-line plug (~2.5 mm, JST-SM style) so the Qi pad can be unplugged; 1-3 and 2-4 mate"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PLUG_2PIN_INLINE_1_1"
+				(rectangle
+					(start -5.08 4.445)
+					(end -0.635 -4.445)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start 0.635 4.445)
+					(end 5.08 -4.445)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 2.54)
+						(xy 5.08 2.54)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -2.54)
+						(xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.5 3.2)
+						(xy -0.635 2.54)
+						(xy -1.5 1.88)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.5 -1.88)
+						(xy -0.635 -2.54)
+						(xy -1.5 -3.2)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "PANEL+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "PANEL-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "PAD+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "PAD-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "console_as_built:QI_PAD_12V"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.508)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 2.54 9.525 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Qi wireless charger pad"
+				(at 2.54 -9.525 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Qi charging pad with leatherette frame and red status LED; module input rating requires checking"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "QI_PAD_12V_1_1"
+				(rectangle
+					(start -7.62 7.62)
+					(end 12.7 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center 5.08 0)
+					(radius 1.5)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 0)
+					(radius 3)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 0)
+					(radius 4.5)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 10.9 5.9)
+					(radius 0.6)
+					(stroke
+						(width 0)
+						(type default)
+						(color 220 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 220 0 0 1)
+					)
+				)
+				(text "Qi"
+					(at -2.6 5.3 0)
+					(effects
+						(font
+							(size 1.4 1.4)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 2.54 0)
+					(length 5.08)
+					(name "+12V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -2.54 0)
+					(length 5.08)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "console_as_built:BT_RGB_CONTROLLER"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.508)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 14.605 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Bluetooth RGB LED controller"
+				(at 0 -14.605 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Bluetooth RGB LED controller, phone-app control, label INPUT DC 5-12V, DC barrel input; output assumed common-anode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "BT_RGB_CONTROLLER_1_1"
+				(rectangle
+					(start -15.24 12.7)
+					(end 15.24 -12.7)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "LED CONTROLLER (Bluetooth)"
+					(at 0 10.4 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+							(bold yes)
+						)
+					)
+				)
+				(text "INPUT DC 5-12V"
+					(at 0 -10.4 0)
+					(effects
+						(font
+							(size 1.4 1.4)
+						)
+					)
+				)
+				(text "phone app: colours"
+					(at 0 -6.6 0)
+					(effects
+						(font
+							(size 1.4 1.4)
+						)
+					)
+				)
+				(text "DC barrel in"
+					(at -14.3 6.2 0)
+					(effects
+						(font
+							(size 1.4 1.4)
+						)
+						(justify left)
+					)
+				)
+				(pin passive line
+					(at -20.32 2.54 0)
+					(length 5.08)
+					(name "DC+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -20.32 -2.54 0)
+					(length 5.08)
+					(name "DC-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 16.51 7.62 180)
+					(length 1.27)
+					(name "V+(anode*)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 16.51 2.54 180)
+					(length 1.27)
+					(name "R"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 16.51 -2.54 180)
+					(length 1.27)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 16.51 -7.62 180)
+					(length 1.27)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "console_as_built:RGB_SPLITTER_1TO3"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.3)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 37.465 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1-to-3 RGB splitter"
+				(at 0 -37.465 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "1-to-3 splitter with round multi-pin in-line plugs (likely the LED kit's); V+, R, G, B paralleled to each head"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "RGB_SPLITTER_1TO3_1_1"
+				(rectangle
+					(start -5.08 35.56)
+					(end 5.08 -35.56)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "1 to 3"
+					(at 0 12.7 0)
+					(effects
+						(font
+							(size 1.4 1.4)
+							(bold yes)
+						)
+					)
+				)
+				(text "split"
+					(at 0 -12.7 0)
+					(effects
+						(font
+							(size 1.4 1.4)
+							(bold yes)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 7.62 0)
+					(length 1.27)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 2.54 0)
+					(length 1.27)
+					(name "R"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -2.54 0)
+					(length 1.27)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -7.62 0)
+					(length 1.27)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 33.02 180)
+					(length 1.27)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 27.94 180)
+					(length 1.27)
+					(name "R"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 22.86 180)
+					(length 1.27)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 17.78 180)
+					(length 1.27)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 7.62 180)
+					(length 1.27)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 2.54 180)
+					(length 1.27)
+					(name "R"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 -2.54 180)
+					(length 1.27)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 -7.62 180)
+					(length 1.27)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 -17.78 180)
+					(length 1.27)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 -22.86 180)
+					(length 1.27)
+					(name "R"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 -27.94 180)
+					(length 1.27)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 -33.02 180)
+					(length 1.27)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "console_as_built:RGB_LED_HEAD"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.508)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 2.54 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "RGB LED head (aluminium)"
+				(at 2.54 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Machined aluminium RGB LED head ~12.5 x 35 mm, common anode, 4-wire cable"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "RGB_LED_HEAD_1_1"
+				(rectangle
+					(start -5.08 10.16)
+					(end 10.16 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type color)
+						(color 225 225 230 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 7.62)
+						(xy 6.35 7.62)
+						(xy 6.35 -7.62)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 2.54)
+						(xy 0 2.54)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 3.64)
+						(xy 2.032 1.44)
+						(xy 0 2.54)
+						(xy 2.032 3.64)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+						(color 220 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 220 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.64)
+						(xy 0 1.44)
+					)
+					(stroke
+						(width 0.3)
+						(type default)
+						(color 220 0 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 2.54)
+						(xy 6.35 2.54)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "R"
+					(at -3.4 3.84 0)
+					(effects
+						(font
+							(size 1.4 1.4)
+						)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -2.54)
+						(xy 0 -2.54)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -1.44)
+						(xy 2.032 -3.64)
+						(xy 0 -2.54)
+						(xy 2.032 -1.44)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+						(color 0 150 0 1)
+					)
+					(fill
+						(type color)
+						(color 0 150 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.44)
+						(xy 0 -3.64)
+					)
+					(stroke
+						(width 0.3)
+						(type default)
+						(color 0 150 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -2.54)
+						(xy 6.35 -2.54)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "G"
+					(at -3.4 -1.24 0)
+					(effects
+						(font
+							(size 1.4 1.4)
+						)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -7.62)
+						(xy 0 -7.62)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -6.52)
+						(xy 2.032 -8.72)
+						(xy 0 -7.62)
+						(xy 2.032 -6.52)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+						(color 0 90 255 1)
+					)
+					(fill
+						(type color)
+						(color 0 90 255 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -6.52)
+						(xy 0 -8.72)
+					)
+					(stroke
+						(width 0.3)
+						(type default)
+						(color 0 90 255 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -7.62)
+						(xy 6.35 -7.62)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "B"
+					(at -3.4 -6.32 0)
+					(effects
+						(font
+							(size 1.4 1.4)
+						)
+					)
+				)
+				(text "V+"
+					(at -3 8.95 0)
+					(effects
+						(font
+							(size 1.4 1.4)
+						)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.8 1.27)
+						(xy 13.6 1.27)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+						(color 230 120 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 1.77)
+						(xy 13.6 1.27)
+						(xy 12.7 0.77)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+						(color 230 120 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.8 -1.27)
+						(xy 13.6 -1.27)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+						(color 230 120 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 -0.77)
+						(xy 13.6 -1.27)
+						(xy 12.7 -1.77)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+						(color 230 120 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -6.35 7.62 0)
+					(length 1.27)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 2.54 0)
+					(length 1.27)
+					(name "R"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -2.54 0)
+					(length 1.27)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -7.62 0)
+					(length 1.27)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "console_as_built:SIDE_GLOW_FIBRE"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.508)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "FO"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Side-glow fibre"
+				(at 5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Clear side-glow plastic optical fibre with fin (~4 mm core), lit from one end; light, not electricity"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SIDE_GLOW_FIBRE_1_1"
+				(rectangle
+					(start 0 1)
+					(end 35.56 -1)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type color)
+						(color 190 160 255 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.8 -1.8)
+						(xy 34.76 -1.8)
+					)
+					(stroke
+						(width 0.3)
+						(type default)
+						(color 150 120 220 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "console_as_built:CLOCK_OWN_BATTERY"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.508)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "CLK"
+				(at 0 6.985 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Analog stick-on clock"
+				(at 0 -6.985 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Small analog car clock, ~34 mm, powered by its own battery"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "CLOCK_OWN_BATTERY_1_1"
+				(circle
+					(center 0 0)
+					(radius 5.08)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0)
+						(xy 0 3.6)
+					)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0)
+						(xy 2.6 0)
+					)
+					(stroke
+						(width 0.3)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 4.4)
+						(xy 0 5.08)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.4 0)
+						(xy 5.08 0)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -4.4)
+						(xy 0 -5.08)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.4 0)
+						(xy -5.08 0)
+					)
+					(stroke
+						(width 0.2)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 10.16 0)
+					(radius 2.6)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "+"
+					(at 10.16 0.3 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+							(bold yes)
+						)
+					)
+				)
+				(text "own battery"
+					(at 11.43 -4.4 0)
+					(effects
+						(font
+							(size 1.4 1.4)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(symbol
+		(lib_id "console_as_built:CAR_12V_OUTLET")
+		(at 30.48 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9996c360-b862-57c9-a756-7d5257bc8667")
+		(property "Reference" "CAR1"
+			(at 26.67 42.545 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "Car 12 V outlet"
+			(at 26.67 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 2 2)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Car's own 12 V outlet (factory), lower centre stack; live only with ignition on (likely)"
+			(at 30.48 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6b2c2af6-9acb-5a11-9f9a-cf4c753eb983")
+		)
+		(pin "2"
+			(uuid "95053831-af9d-5a1e-adf3-887d1602efcb")
+		)
+		(instances
+			(project "console_as_built"
+				(path "/4366f3f6-10ca-57a8-a458-29031ebff6e9"
+					(reference "CAR1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "console_as_built:FUSED_CIG_PLUG")
+		(at 60.96 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5866db7d-8666-556d-9895-9c33002c590f")
+		(property "Reference" "P1"
+			(at 60.96 42.545 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "Fused 12 V plug"
+			(at 60.96 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 2 2)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Fused right-angle cigarette plug; fuse in the tip, value unknown (usually 10-15 A)"
+			(at 60.96 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4c5588ba-89e7-559b-b173-7c310e620f15")
+		)
+		(pin "2"
+			(uuid "89f5f9bc-278c-58fb-b249-288afddcb2eb")
+		)
+		(pin "3"
+			(uuid "e07519fa-e014-5ded-9a1b-1e8913e2ea90")
+		)
+		(pin "4"
+			(uuid "1a850868-d019-5a77-98aa-06133447f16e")
+		)
+		(instances
+			(project "console_as_built"
+				(path "/4366f3f6-10ca-57a8-a458-29031ebff6e9"
+					(reference "P1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "console_as_built:FEED_CABLE_2C")
+		(at 96.52 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7be9c073-80b2-5e83-b3e5-a508fa2e73fa")
+		(property "Reference" "W1"
+			(at 96.52 43.815 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "Feed cable, brown/blue"
+			(at 96.52 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 2 2)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "The plug's own lead (IMG_3488): round black two-core, brown (+) blue (-), ~0.5-0.75 mm2; enters through a clip at the driver-side notch corner (IMG_3502)"
+			(at 96.52 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3ed438a2-ad38-5965-9fea-6ca854ad55f0")
+		)
+		(pin "2"
+			(uuid "6c9a7c33-ec0f-5e09-b7b1-44e186df17f3")
+		)
+		(pin "3"
+			(uuid "0b0d7b70-aa64-5b04-ba35-4f32d34236e8")
+		)
+		(pin "4"
+			(uuid "de0c8b5e-c07e-5724-8274-a0929f7b0bcc")
+		)
+		(instances
+			(project "console_as_built"
+				(path "/4366f3f6-10ca-57a8-a458-29031ebff6e9"
+					(reference "W1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 40.64 48.26)
+			(xy 45.72 48.26)
+		)
+		(stroke
+			(width 0.3)
+			(type dash)
+			(color 200 0 0 1)
+		)
+		(uuid "493c3c3e-b40b-59aa-b330-5c7b3b3b9f0f")
+	)
+	(wire
+		(pts
+			(xy 40.64 53.34)
+			(xy 45.72 53.34)
+		)
+		(stroke
+			(width 0.3)
+			(type dash)
+			(color 0 0 0 1)
+		)
+		(uuid "8be7ec89-4742-5160-b4f0-326a23e8e090")
+	)
+	(wire
+		(pts
+			(xy 76.2 48.26)
+			(xy 83.82 48.26)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 200 0 0 1)
+		)
+		(uuid "1aa7029e-8227-5d5d-954a-642a7d60a315")
+	)
+	(wire
+		(pts
+			(xy 76.2 53.34)
+			(xy 83.82 53.34)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "56003522-5133-548b-8283-8fec5b080b9e")
+	)
+	(label "+12V_IN"
+		(at 76.835 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d9fa044-642e-5ac8-bbcd-a14d001d38a8")
+	)
+	(wire
+		(pts
+			(xy 109.22 48.26)
+			(xy 124.46 48.26)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 200 0 0 1)
+		)
+		(uuid "165c6040-7713-5b2b-b999-511009db3ea2")
+	)
+	(wire
+		(pts
+			(xy 124.46 48.26)
+			(xy 124.46 76.2)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 200 0 0 1)
+		)
+		(uuid "bcf42d9f-2c53-538a-bad3-46c2623e2c51")
+	)
+	(wire
+		(pts
+			(xy 109.22 53.34)
+			(xy 129.54 53.34)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "8454eb98-0633-53a6-be37-b1db8410fc02")
+	)
+	(wire
+		(pts
+			(xy 129.54 53.34)
+			(xy 129.54 139.7)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "8910747e-a45e-52d9-b7b7-42015796649e")
+	)
+	(wire
+		(pts
+			(xy 45.72 76.2)
+			(xy 88.9 76.2)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 200 0 0 1)
+		)
+		(uuid "28f2d821-65b7-5180-b8dd-ea2990363172")
+	)
+	(wire
+		(pts
+			(xy 88.9 76.2)
+			(xy 124.46 76.2)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 200 0 0 1)
+		)
+		(uuid "eb9a7bc7-ba3a-5201-a2d8-78174ec01781")
+	)
+	(wire
+		(pts
+			(xy 124.46 76.2)
+			(xy 139.7 76.2)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 200 0 0 1)
+		)
+		(uuid "0bf938cf-e8a1-56e6-8f45-3ec0c0001466")
+	)
+	(wire
+		(pts
+			(xy 139.7 76.2)
+			(xy 210.82 76.2)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 200 0 0 1)
+		)
+		(uuid "5a97a1f2-a80d-5dde-aa73-9607b4c880dc")
+	)
+	(junction
+		(at 88.9 76.2)
+		(diameter 0)
+		(color 200 0 0 1)
+		(uuid "9d513649-5e95-513d-b94e-ba6943721521")
+	)
+	(junction
+		(at 124.46 76.2)
+		(diameter 0)
+		(color 200 0 0 1)
+		(uuid "4309acb6-9d7f-5f51-ae3c-a7d32ba2a278")
+	)
+	(junction
+		(at 139.7 76.2)
+		(diameter 0)
+		(color 200 0 0 1)
+		(uuid "29fab754-b097-5f5f-bc17-addb68d89008")
+	)
+	(wire
+		(pts
+			(xy 45.72 139.7)
+			(xy 88.9 139.7)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "555fa3d1-b0b8-58e9-a0b4-830807b41fac")
+	)
+	(wire
+		(pts
+			(xy 88.9 139.7)
+			(xy 129.54 139.7)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "983209d7-d86a-515a-b9a2-f352a6000895")
+	)
+	(wire
+		(pts
+			(xy 129.54 139.7)
+			(xy 139.7 139.7)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "a00ff6d4-0f06-533b-b0bb-23065e715cf0")
+	)
+	(wire
+		(pts
+			(xy 139.7 139.7)
+			(xy 228.6 139.7)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "97198af7-be4b-5593-8eb6-d8367e1facf4")
+	)
+	(junction
+		(at 88.9 139.7)
+		(diameter 0)
+		(color 0 0 0 1)
+		(uuid "2b955193-38c8-5dc3-b215-8adc545652e8")
+	)
+	(junction
+		(at 129.54 139.7)
+		(diameter 0)
+		(color 0 0 0 1)
+		(uuid "4c7a8780-292a-567b-9f5d-d51ea2ce3fc8")
+	)
+	(junction
+		(at 139.7 139.7)
+		(diameter 0)
+		(color 0 0 0 1)
+		(uuid "ab374740-6815-5818-98a6-66e42effb2a9")
+	)
+	(label "J+"
+		(at 62.23 76.2 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c39a054-c320-5983-bc1b-a1b5eede7165")
+	)
+	(label "J-"
+		(at 62.23 139.7 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "ef48e415-b8fc-50f9-b4a1-5edf12304c97")
+	)
+	(label "J+"
+		(at 170.18 76.2 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "92c6f3e9-e1f2-541b-a85c-00172832c2d5")
+	)
+	(label "J-"
+		(at 170.18 139.7 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "0024ae2f-5a06-55d1-bc02-a80c400bc4b3")
+	)
+	(symbol
+		(lib_id "console_as_built:USB_PD_QC_SOCKET")
+		(at 45.72 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3d3baaf7-97c3-5032-b92d-c2b5daa3a744")
+		(property "Reference" "X1"
+			(at 54.61 104.775 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Dual USB socket"
+			(at 54.61 108.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 2 2)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "USB-C PD + USB-A QC3.0, 12/24 V, blue LED ring"
+			(at 45.72 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "50d16392-1a87-5c8a-9fc6-2870cb1c0196")
+		)
+		(pin "2"
+			(uuid "684720d8-8b66-56a0-87b8-1599c20a6f13")
+		)
+		(instances
+			(project "console_as_built"
+				(path "/4366f3f6-10ca-57a8-a458-29031ebff6e9"
+					(reference "X1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 45.72 76.2)
+			(xy 45.72 95.25)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 200 0 0 1)
+		)
+		(uuid "e7639ee6-faca-59b8-9d9a-56750ad31e4a")
+	)
+	(wire
+		(pts
+			(xy 45.72 120.65)
+			(xy 45.72 139.7)
+		)
+		(stroke
+			(width 0.3)
+			(type dash)
+			(color 0 0 0 1)
+		)
+		(uuid "39ecc3da-9c03-5ee2-befc-2a4ad47c6c16")
+	)
+	(symbol
+		(lib_id "console_as_built:SOCKET_12V_ACC")
+		(at 88.9 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8d7d582b-dc4c-51de-b568-e2ce7aaad438")
+		(property "Reference" "X2"
+			(at 97.79 104.775 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "12 V socket"
+			(at 97.79 108.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 2 2)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Cigarette-lighter type 12 V accessory socket, centre +, shell -; not a switch"
+			(at 88.9 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a69dbc98-261c-5660-b64e-35b645867eec")
+		)
+		(pin "2"
+			(uuid "401be33c-0d9b-54dd-83ba-7cd3fc34e800")
+		)
+		(instances
+			(project "console_as_built"
+				(path "/4366f3f6-10ca-57a8-a458-29031ebff6e9"
+					(reference "X2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 88.9 76.2)
+			(xy 88.9 95.25)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 200 0 0 1)
+		)
+		(uuid "0bcce9b9-fa5c-57df-b04a-666b0619f113")
+	)
+	(wire
+		(pts
+			(xy 88.9 120.65)
+			(xy 88.9 139.7)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "e147bb98-9756-5e62-8b22-e30e5d6bba5f")
+	)
+	(symbol
+		(lib_id "console_as_built:PLUG_2PIN_INLINE")
+		(at 152.4 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bb6f195c-2229-5a67-b7fa-a95f86c2b488")
+		(property "Reference" "J2"
+			(at 152.4 100.965 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "2-pin plug"
+			(at 152.4 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Small two-pin plug (JST-SM style) between panel and Qi pad"
+			(at 152.4 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8719b818-ab5c-5472-a4ac-cb6966a78d62")
+		)
+		(pin "2"
+			(uuid "7464ddd7-da4e-5780-aea6-e137c91aecba")
+		)
+		(pin "3"
+			(uuid "36b4b274-1573-5bd9-82dd-3e25ecc270ae")
+		)
+		(pin "4"
+			(uuid "88a85154-551d-5892-af6b-2aad8774136e")
+		)
+		(instances
+			(project "console_as_built"
+				(path "/4366f3f6-10ca-57a8-a458-29031ebff6e9"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 139.7 76.2)
+			(xy 139.7 105.41)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 200 0 0 1)
+		)
+		(uuid "8ebdf375-9900-59ec-9a8f-5eb040c54f78")
+	)
+	(wire
+		(pts
+			(xy 139.7 105.41)
+			(xy 144.78 105.41)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 200 0 0 1)
+		)
+		(uuid "3bec8062-7414-5456-b428-2680a3ee6904")
+	)
+	(wire
+		(pts
+			(xy 139.7 139.7)
+			(xy 139.7 110.49)
+		)
+		(stroke
+			(width 0.3)
+			(type dash)
+			(color 0 0 0 1)
+		)
+		(uuid "84d6dc30-4205-531e-82ad-9645a39fd3ca")
+	)
+	(wire
+		(pts
+			(xy 139.7 110.49)
+			(xy 144.78 110.49)
+		)
+		(stroke
+			(width 0.3)
+			(type dash)
+			(color 0 0 0 1)
+		)
+		(uuid "499184aa-b18b-536b-b5bd-2295bf392b91")
+	)
+	(symbol
+		(lib_id "console_as_built:QI_PAD_12V")
+		(at 177.8 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b03dfb06-916a-53fb-90cb-a4518e630f22")
+		(property "Reference" "U2"
+			(at 180.34 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "Qi charger pad"
+			(at 180.34 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 2 2)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Qi wireless charger pad in the car's tray in front of the gear lever (IMG_3484); 12 V module"
+			(at 177.8 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "29d306b1-dfe8-5b6d-9e71-eb9d46b4e3f6")
+		)
+		(pin "2"
+			(uuid "f1e313db-901b-5ebf-ad31-e1f3115938b6")
+		)
+		(instances
+			(project "console_as_built"
+				(path "/4366f3f6-10ca-57a8-a458-29031ebff6e9"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 160.02 105.41)
+			(xy 165.1 105.41)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 200 0 0 1)
+		)
+		(uuid "684f72cf-7b6e-5526-ab4a-46e9660fcc4a")
+	)
+	(wire
+		(pts
+			(xy 160.02 110.49)
+			(xy 165.1 110.49)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "bf8fa6d2-5527-57d2-a1b9-cbb92f923c05")
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 220.98 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "88cf21d7-e953-59a0-85d7-cc21edca4e68")
+		(property "Reference" "SW1"
+			(at 213.36 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Silver push button, latching"
+			(at 213.36 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 2 2)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Flat stainless anti-vandal push button, ~12-16 mm; the only control; turns on the RGB lights"
+			(at 220.98 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bf3484bb-86bc-54f2-833b-b49d35786eb0")
+		)
+		(pin "2"
+			(uuid "6be4d281-740b-55db-a683-96aa763b834b")
+		)
+		(instances
+			(project "console_as_built"
+				(path "/4366f3f6-10ca-57a8-a458-29031ebff6e9"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 210.82 76.2)
+			(xy 210.82 91.44)
+		)
+		(stroke
+			(width 0.3)
+			(type dash)
+			(color 200 0 0 1)
+		)
+		(uuid "8796ee66-f58c-50d4-8c75-503a34655c33")
+	)
+	(wire
+		(pts
+			(xy 210.82 91.44)
+			(xy 215.9 91.44)
+		)
+		(stroke
+			(width 0.3)
+			(type dash)
+			(color 200 0 0 1)
+		)
+		(uuid "9e3bb46f-d17e-5f01-9c50-f28b39ae2c14")
+	)
+	(wire
+		(pts
+			(xy 226.06 91.44)
+			(xy 231.14 91.44)
+		)
+		(stroke
+			(width 0.3)
+			(type dash)
+			(color 200 0 0 1)
+		)
+		(uuid "81e04394-7066-55da-b5a6-09b3440a1e82")
+	)
+	(wire
+		(pts
+			(xy 231.14 91.44)
+			(xy 231.14 105.41)
+		)
+		(stroke
+			(width 0.3)
+			(type dash)
+			(color 200 0 0 1)
+		)
+		(uuid "0bbddc2a-16a0-5660-9cd1-fe8f27516434")
+	)
+	(wire
+		(pts
+			(xy 231.14 105.41)
+			(xy 233.68 105.41)
+		)
+		(stroke
+			(width 0.3)
+			(type dash)
+			(color 200 0 0 1)
+		)
+		(uuid "8a175210-b466-59a5-9ef0-8caae43dc17a")
+	)
+	(label "SW_RGB"
+		(at 231.14 104.14 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "78b3545f-0132-5cdb-a8f8-5fb79bfcf87f")
+	)
+	(wire
+		(pts
+			(xy 233.68 110.49)
+			(xy 228.6 110.49)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "613b67da-e502-5198-9ae4-f53a34f0ce31")
+	)
+	(wire
+		(pts
+			(xy 228.6 110.49)
+			(xy 228.6 139.7)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "1d4d6a2a-1ab7-50d1-b898-664d36bf9e0a")
+	)
+	(symbol
+		(lib_id "console_as_built:BT_RGB_CONTROLLER")
+		(at 254 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5c490450-8204-58be-9063-b7d241ab2f88")
+		(property "Reference" "U1"
+			(at 254 93.345 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "Bluetooth RGB LED controller"
+			(at 254 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 2 2)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bluetooth RGB LED controller, INPUT DC 5-12V, phone app; lies on the bottom of the cup body (IMG_3502, 3481, 3482), DC plug at its rear end, LED lead at its front end"
+			(at 254 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "45d7ca94-b10d-58d1-8340-eba7b6807ad0")
+		)
+		(pin "2"
+			(uuid "ffe1e85d-2131-54fa-83a2-cc2838b4e1b1")
+		)
+		(pin "3"
+			(uuid "bd165901-4eaa-5b9d-919c-45720a4e3404")
+		)
+		(pin "4"
+			(uuid "2a3ae181-1393-523d-9752-294f16d21797")
+		)
+		(pin "5"
+			(uuid "1926a0d1-aa3a-54aa-8e5b-384f260220e1")
+		)
+		(pin "6"
+			(uuid "45ff1c59-0033-5e5d-b9db-2d099706b25f")
+		)
+		(instances
+			(project "console_as_built"
+				(path "/4366f3f6-10ca-57a8-a458-29031ebff6e9"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "console_as_built:RGB_SPLITTER_1TO3")
+		(at 289.56 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fb3e2d11-8201-58b7-a85f-e29a8d24254a")
+		(property "Reference" "J3"
+			(at 289.56 70.485 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "1-to-3 splitter"
+			(at 289.56 145.415 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 289.56 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 289.56 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Black ribbed round in-line plugs just ahead of the cup (IMG_3502, 3481); where the cable splits three ways is hidden in the bundle"
+			(at 289.56 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "56a61534-064d-534b-8323-1d4624b4909d")
+		)
+		(pin "2"
+			(uuid "2a447053-2f8e-5762-99b6-c7846cb40193")
+		)
+		(pin "3"
+			(uuid "37d54321-b747-519a-a162-8563af657b53")
+		)
+		(pin "4"
+			(uuid "de6b1b21-7367-5c83-baa1-846e74a02aac")
+		)
+		(pin "5"
+			(uuid "97856401-6f93-5d77-8491-ddb66704c1d5")
+		)
+		(pin "6"
+			(uuid "0be76b46-54b7-5849-8e50-153a1799f59f")
+		)
+		(pin "7"
+			(uuid "5f686679-0182-5b2b-9445-959127bac1ff")
+		)
+		(pin "8"
+			(uuid "feae8a98-ca32-5b00-af6b-96208c1eeb2f")
+		)
+		(pin "9"
+			(uuid "3b70b207-0da8-579a-a8bd-a26c4bf4cdbd")
+		)
+		(pin "10"
+			(uuid "8927d422-a052-5fd5-a0b2-5540418797e3")
+		)
+		(pin "11"
+			(uuid "fe178e20-4b0f-556a-aad3-d11e02607d28")
+		)
+		(pin "12"
+			(uuid "778a9b55-ba42-50b9-8d5c-4cb2f7d8d0d7")
+		)
+		(pin "13"
+			(uuid "23c4b124-8e17-5f84-85fd-51aa6e8524b6")
+		)
+		(pin "14"
+			(uuid "ca34e414-dffd-5c47-ab0b-d3e93fd78148")
+		)
+		(pin "15"
+			(uuid "e855c996-6db5-5305-a1ee-280c4cfd0596")
+		)
+		(pin "16"
+			(uuid "2387cc8e-bd45-545f-b318-86ebcc519979")
+		)
+		(instances
+			(project "console_as_built"
+				(path "/4366f3f6-10ca-57a8-a458-29031ebff6e9"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 270.51 100.33)
+			(xy 283.21 100.33)
+		)
+		(stroke
+			(width 0.25)
+			(type solid)
+			(color 90 70 150 1)
+		)
+		(uuid "c4708b3e-570f-582e-9cb7-5b09d4b6019f")
+	)
+	(wire
+		(pts
+			(xy 270.51 105.41)
+			(xy 283.21 105.41)
+		)
+		(stroke
+			(width 0.25)
+			(type solid)
+			(color 90 70 150 1)
+		)
+		(uuid "a87cd363-5a62-50bc-b170-24da212aa2e3")
+	)
+	(wire
+		(pts
+			(xy 270.51 110.49)
+			(xy 283.21 110.49)
+		)
+		(stroke
+			(width 0.25)
+			(type solid)
+			(color 90 70 150 1)
+		)
+		(uuid "ee8674c4-9427-5d2e-a31e-11570e16683b")
+	)
+	(wire
+		(pts
+			(xy 270.51 115.57)
+			(xy 283.21 115.57)
+		)
+		(stroke
+			(width 0.25)
+			(type solid)
+			(color 90 70 150 1)
+		)
+		(uuid "4f7f7f07-5093-52b0-9770-0bf296259679")
+	)
+	(symbol
+		(lib_id "console_as_built:RGB_LED_HEAD")
+		(at 314.96 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "15c71c70-bc2a-5eff-bd6d-d84088cda793")
+		(property "Reference" "H1"
+			(at 312.42 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RGB LED head: under deck, driver rear corner"
+			(at 317.5 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 314.96 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 314.96 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Aluminium RGB LED head, common anode; lies under the deck at the driver-side rear corner (IMG_3502)"
+			(at 314.96 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e5f0f8c9-d8db-523e-acd4-d90ebd481b3d")
+		)
+		(pin "2"
+			(uuid "370607ac-6a30-5d8c-9569-7a8dee8ae64b")
+		)
+		(pin "3"
+			(uuid "81cae84e-1aeb-5ffe-a76b-e17a66917055")
+		)
+		(pin "4"
+			(uuid "34d8e3b8-4cb5-59f9-9a13-40b284ebbbb6")
+		)
+		(instances
+			(project "console_as_built"
+				(path "/4366f3f6-10ca-57a8-a458-29031ebff6e9"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 295.91 74.93)
+			(xy 308.61 74.93)
+		)
+		(stroke
+			(width 0.25)
+			(type solid)
+			(color 90 70 150 1)
+		)
+		(uuid "8525639c-2262-516c-a4f2-99c55414bfe5")
+	)
+	(wire
+		(pts
+			(xy 295.91 80.01)
+			(xy 308.61 80.01)
+		)
+		(stroke
+			(width 0.25)
+			(type solid)
+			(color 90 70 150 1)
+		)
+		(uuid "4ad1d337-9101-53f6-af3d-8c3e7f7c4143")
+	)
+	(wire
+		(pts
+			(xy 295.91 85.09)
+			(xy 308.61 85.09)
+		)
+		(stroke
+			(width 0.25)
+			(type solid)
+			(color 90 70 150 1)
+		)
+		(uuid "99730976-9ea9-5094-a69e-beea81301bcd")
+	)
+	(wire
+		(pts
+			(xy 295.91 90.17)
+			(xy 308.61 90.17)
+		)
+		(stroke
+			(width 0.25)
+			(type solid)
+			(color 90 70 150 1)
+		)
+		(uuid "1150e5bd-5f17-5115-8e8b-64370678d71a")
+	)
+	(symbol
+		(lib_id "console_as_built:SIDE_GLOW_FIBRE")
+		(at 330.2 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b9442c05-1aa8-58bf-99fd-1903a7635cec")
+		(property "Reference" "FO1"
+			(at 330.2 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "fibre on top of the driver arm"
+			(at 335.915 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 330.2 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Side-glow fibre lit by the LED head (light, not electricity); runs along the top of the side arm, in the middle of its band (IMG_3490, 3501)"
+			(at 330.2 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "console_as_built"
+				(path "/4366f3f6-10ca-57a8-a458-29031ebff6e9"
+					(reference "FO1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "light, not wire"
+		(exclude_from_sim no)
+		(at 367.2 83.185 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+				(color 120 80 200 1)
+			)
+			(justify left)
+		)
+		(uuid "168350bf-a804-57da-8cee-be812ebbf12a")
+	)
+	(symbol
+		(lib_id "console_as_built:RGB_LED_HEAD")
+		(at 314.96 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e26ad8dc-4e4d-5008-927f-808567bdd1a1")
+		(property "Reference" "H2"
+			(at 312.42 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RGB LED head: under deck, passenger rear corner"
+			(at 317.5 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 314.96 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 314.96 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Aluminium RGB LED head, common anode; lies under the deck at the passenger-side rear corner (IMG_3502)"
+			(at 314.96 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c0b2f877-24a8-5964-8dee-66c53cab34cc")
+		)
+		(pin "2"
+			(uuid "3a120c0a-b124-5a03-862f-aba5411c5200")
+		)
+		(pin "3"
+			(uuid "2cc62e08-6e94-5116-ac87-071cfe67ef99")
+		)
+		(pin "4"
+			(uuid "a8458a07-c013-5adf-a489-e386814c355f")
+		)
+		(instances
+			(project "console_as_built"
+				(path "/4366f3f6-10ca-57a8-a458-29031ebff6e9"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 295.91 100.33)
+			(xy 308.61 100.33)
+		)
+		(stroke
+			(width 0.25)
+			(type solid)
+			(color 90 70 150 1)
+		)
+		(uuid "8e73e971-1795-5e87-9609-ff1e01c6ca1f")
+	)
+	(wire
+		(pts
+			(xy 295.91 105.41)
+			(xy 308.61 105.41)
+		)
+		(stroke
+			(width 0.25)
+			(type solid)
+			(color 90 70 150 1)
+		)
+		(uuid "96271f40-5689-53ca-8336-002194ef5fd5")
+	)
+	(wire
+		(pts
+			(xy 295.91 110.49)
+			(xy 308.61 110.49)
+		)
+		(stroke
+			(width 0.25)
+			(type solid)
+			(color 90 70 150 1)
+		)
+		(uuid "4ef46317-ba46-5bad-b49b-03cc4d22792a")
+	)
+	(wire
+		(pts
+			(xy 295.91 115.57)
+			(xy 308.61 115.57)
+		)
+		(stroke
+			(width 0.25)
+			(type solid)
+			(color 90 70 150 1)
+		)
+		(uuid "0258af3b-9367-59da-82cd-34bfdd6912dd")
+	)
+	(symbol
+		(lib_id "console_as_built:SIDE_GLOW_FIBRE")
+		(at 330.2 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "caed66e4-02d5-5cb4-ae45-5ce2356cea59")
+		(property "Reference" "FO2"
+			(at 330.2 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "fibre on top of the passenger arm"
+			(at 335.915 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 330.2 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Side-glow fibre lit by the LED head (light, not electricity); runs along the top of the side arm, in the middle of its band (IMG_3490, 3501)"
+			(at 330.2 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "console_as_built"
+				(path "/4366f3f6-10ca-57a8-a458-29031ebff6e9"
+					(reference "FO2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "light, not wire"
+		(exclude_from_sim no)
+		(at 367.2 108.585 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+				(color 120 80 200 1)
+			)
+			(justify left)
+		)
+		(uuid "5f4355e9-7bc9-5f1d-93c0-5708c7da58a6")
+	)
+	(symbol
+		(lib_id "console_as_built:RGB_LED_HEAD")
+		(at 314.96 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "463dd0d6-9d21-5056-8f1d-6a6f6a921c88")
+		(property "Reference" "H3"
+			(at 312.42 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RGB LED head: loose in the car's tray"
+			(at 317.5 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 314.96 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 314.96 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Aluminium RGB LED head, common anode; loose, no fibre; lies in the car's small tray left of the gear lever (IMG_3484)"
+			(at 314.96 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a6ad480a-1447-59c1-86a9-fa03c718e921")
+		)
+		(pin "2"
+			(uuid "941fe16e-a40f-593e-a15c-6bb2fe268453")
+		)
+		(pin "3"
+			(uuid "aab8aeb2-a3a7-508c-a01b-07424ef4fd97")
+		)
+		(pin "4"
+			(uuid "d452a5d9-00c4-5d60-bdf0-02a0eeac7088")
+		)
+		(instances
+			(project "console_as_built"
+				(path "/4366f3f6-10ca-57a8-a458-29031ebff6e9"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 295.91 125.73)
+			(xy 308.61 125.73)
+		)
+		(stroke
+			(width 0.25)
+			(type solid)
+			(color 90 70 150 1)
+		)
+		(uuid "185765fb-9dfb-5937-9ab1-a7f79f7bbf73")
+	)
+	(wire
+		(pts
+			(xy 295.91 130.81)
+			(xy 308.61 130.81)
+		)
+		(stroke
+			(width 0.25)
+			(type solid)
+			(color 90 70 150 1)
+		)
+		(uuid "e1a7eed2-e9ef-52bc-9eb8-7e4b0066ef9a")
+	)
+	(wire
+		(pts
+			(xy 295.91 135.89)
+			(xy 308.61 135.89)
+		)
+		(stroke
+			(width 0.25)
+			(type solid)
+			(color 90 70 150 1)
+		)
+		(uuid "f2a4a67e-2606-51c2-af44-167b524081ef")
+	)
+	(wire
+		(pts
+			(xy 295.91 140.97)
+			(xy 308.61 140.97)
+		)
+		(stroke
+			(width 0.25)
+			(type solid)
+			(color 90 70 150 1)
+		)
+		(uuid "5a444749-3a22-5657-8bb0-74f42da7a1c0")
+	)
+	(text "H1 and H2 sit beneath the two rear corners.\nEach shines into a side-glow fibre along\nthe top of a side wall. H3 has no fibre;\nit lights the tray by the gear lever.\nAll three heads change colour together."
+		(exclude_from_sim no)
+		(at 330.2 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "4e3b4f74-7f2b-5be7-826b-8f226420f5f2")
+	)
+	(rectangle
+		(start 137.16 40.64)
+		(end 227.33 69.85)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "eb966cde-f88d-5986-9f70-80cfd6d653ed")
+	)
+	(text "SEPARATE: NOT WIRED"
+		(exclude_from_sim no)
+		(at 139.065 42.545 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "b2272198-f29d-534d-adcd-91cb4acf146f")
+	)
+	(symbol
+		(lib_id "console_as_built:CLOCK_OWN_BATTERY")
+		(at 149.86 57.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "55918129-8cff-54e1-b651-d75a69efd367")
+		(property "Reference" "CLK1"
+			(at 149.86 50.165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "Analog stick-on clock"
+			(at 154.305 65.405 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.86 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Analog clock with its own battery"
+			(at 149.86 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "console_as_built"
+				(path "/4366f3f6-10ca-57a8-a458-29031ebff6e9"
+					(reference "CLK1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "Runs on its own battery.\nIndependent of the console power supply.\nIt is not part of this circuit."
+		(exclude_from_sim no)
+		(at 167.64 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "5caca3dd-73d8-52d2-9063-c27c07c0d6a9")
+	)
+	(text "Vehicle 12 V outlet at\nthe lower centre console."
+		(exclude_from_sim no)
+		(at 13.97 62.23 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left top)
+		)
+		(uuid "a834bfd6-7030-5e85-afa9-b87a7df35ef2")
+	)
+	(text "I connect the panel through\nthis fused 12 V plug.\nFuse rating: not recorded."
+		(exclude_from_sim no)
+		(at 46.99 62.23 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left top)
+		)
+		(uuid "3865fbb7-a579-506c-82e0-33fa8ddfd41a")
+	)
+	(text "The plug's two-core lead\nenters beneath the panel.\nBrown: positive.\nBlue: return."
+		(exclude_from_sim no)
+		(at 81.28 62.23 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left top)
+		)
+		(uuid "7af88853-de9b-5b95-bd7e-f5af9e4bc058")
+	)
+	(text "Positive junction at the\nUSB socket's + terminal.\nA jumper feeds the\n12 V socket centre."
+		(exclude_from_sim no)
+		(at 12.7 81.28 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left top)
+		)
+		(uuid "173ccf13-f836-55fa-acc0-41913c83df1e")
+	)
+	(text "Return junction at the\n12 V socket's shell\nterminal."
+		(exclude_from_sim no)
+		(at 12.7 123.19 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+			)
+			(justify left top)
+		)
+		(uuid "1a9a0c05-b385-5ba2-8228-c250bdde2327")
+	)
+	(text "USB-C PD and USB-A QC3.0 socket.\nThe blue ring lights when powered.\nThe dashed return connection is\nnot visible in my photographs."
+		(exclude_from_sim no)
+		(at 30.48 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "32f08593-0d5e-5df2-af28-156e6666e04d")
+	)
+	(text "12 V accessory socket:\ncentre positive, shell negative.\nThe red ring is unlit trim."
+		(exclude_from_sim no)
+		(at 72.39 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "13d9266c-a181-5850-ac84-4048d53ab9a8")
+	)
+	(text "A two-pin connector lets me unplug\nthe separate wireless charging pad.\nIts lead enters under the side wall.\nThe dashed return path is hidden\nin my photographs."
+		(exclude_from_sim no)
+		(at 133.35 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "495aac13-cb34-50cc-a64e-934146fd0fb7")
+	)
+	(text "The button latches down and keeps\nthe lights on after release.\nThe drawing places it in the + feed;\nthe actual switched conductor\nis not confirmed. Dashed routes\nare illustrative."
+		(exclude_from_sim no)
+		(at 179.07 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "b9f0c0be-9ccb-5244-ac7e-51ef7c2dabdd")
+	)
+	(text "Bluetooth controller, labelled 5-12 V.\nThe phone app sets colours and modes.\nThe controller sits beneath the cup.\nThe V+, R, G, B output arrangement\nis an assumption in this drawing."
+		(exclude_from_sim no)
+		(at 236.22 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "b58284a4-b4e0-5207-a7f8-8582574f0b83")
+	)
+	(text "In-line connectors feed three heads.\nThe split is hidden in the bundle.\nThe drawing represents the LED\ncables as V+, R, G and B.\nAll heads change colour together."
+		(exclude_from_sim no)
+		(at 279.4 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "6c3c15e5-29b7-5ee4-9af3-5e81269e5c82")
+	)
+	(text "INSTALLED-WIRING DOCUMENTATION"
+		(exclude_from_sim no)
+		(at 12.7 13.97 0)
+		(effects
+			(font
+				(size 3.2 3.2)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "b203db7e-d4e7-58f4-996c-9cbbd8e4a0f8")
+	)
+	(text "Custom Aftermarket Car Center Console Upgrade"
+		(exclude_from_sim no)
+		(at 12.7 20.32 0)
+		(effects
+			(font
+				(size 2.3 2.3)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "d9bf35b1-1772-5ac4-bf50-c39772303194")
+	)
+	(text "I planned the circuit before construction. This October 2026 drawing documents my completed panel.\nDashed routes and the controller pin arrangement are illustrative; hidden connections are not verified."
+		(exclude_from_sim no)
+		(at 12.7 25.4 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left top)
+		)
+		(uuid "6efc34ee-36c9-5fe9-baf2-8822dafc760e")
+	)
+	(rectangle
+		(start 300.99 12.7)
+		(end 407.67 50.8)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "973a27d0-e301-55a4-a58b-35198ff7dd96")
+	)
+	(text "LEGEND"
+		(exclude_from_sim no)
+		(at 303.53 15.24 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "8c366368-57c5-53f5-be4a-5d72f8d140f0")
+	)
+	(polyline
+		(pts
+			(xy 303.53 22.225)
+			(xy 318.77 22.225)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+			(color 90 90 90 1)
+		)
+		(uuid "8209baf8-19a3-52b4-bbdb-d8d2aab30304")
+	)
+	(text "solid = seen in photos"
+		(exclude_from_sim no)
+		(at 321.31 22.225 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left)
+		)
+		(uuid "5b5ad3fd-8628-5b24-9198-940363cef66c")
+	)
+	(polyline
+		(pts
+			(xy 303.53 27.305)
+			(xy 318.77 27.305)
+		)
+		(stroke
+			(width 0.3)
+			(type dash)
+			(color 90 90 90 1)
+		)
+		(uuid "60f007f8-1944-529a-ac9b-1b98b7df6d27")
+	)
+	(text "dashed = inferred"
+		(exclude_from_sim no)
+		(at 321.31 27.305 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left)
+		)
+		(uuid "12b70210-c915-5b5c-820f-7f822ea9cee0")
+	)
+	(polyline
+		(pts
+			(xy 358.14 22.225)
+			(xy 370.84 22.225)
+		)
+		(stroke
+			(width 0.5)
+			(type solid)
+			(color 200 0 0 1)
+		)
+		(uuid "b9f5b2fc-4d96-55db-9f80-78e6f6d3c799")
+	)
+	(text "red = + side"
+		(exclude_from_sim no)
+		(at 373.38 22.225 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+				(color 170 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "3c2dd4e4-3edd-56e6-972c-81ba1f29ed31")
+	)
+	(polyline
+		(pts
+			(xy 358.14 27.305)
+			(xy 370.84 27.305)
+		)
+		(stroke
+			(width 0.5)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(uuid "898a35c9-d9d2-5231-a0c2-832141ae0793")
+	)
+	(text "black = - side"
+		(exclude_from_sim no)
+		(at 373.38 27.305 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left)
+		)
+		(uuid "7ba571e0-14f3-565f-b1bf-369c1f208424")
+	)
+	(polyline
+		(pts
+			(xy 303.53 32.385)
+			(xy 318.77 32.385)
+		)
+		(stroke
+			(width 0.4)
+			(type solid)
+			(color 90 70 150 1)
+		)
+		(uuid "47655d33-d636-56de-8d8e-c10cf1b3889d")
+	)
+	(text "purple = LED cables (V+, R, G, B)"
+		(exclude_from_sim no)
+		(at 321.31 32.385 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left)
+		)
+		(uuid "df58d44d-379f-5bb9-8963-5848406b6fc9")
+	)
+	(text "Red / black / purple are drawing colours, not the real wire colours:\nW1 is really brown (+) / blue (-)."
+		(exclude_from_sim no)
+		(at 303.53 36.195 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left top)
+		)
+		(uuid "4e85c7eb-a51c-57cf-8ab8-f17f795cbfd4")
+	)
+	(text "* or (likely) = inferred, not seen    ~ = estimate\nJ+ / J- = the panel's + and - junction points"
+		(exclude_from_sim no)
+		(at 303.53 44.45 0)
+		(effects
+			(font
+				(size 1.4 1.4)
+			)
+			(justify left top)
+		)
+		(uuid "c445b765-7285-596e-8f95-abacc4e68d5f")
+	)
+	(rectangle
+		(start 10.16 170.18)
+		(end 140.97 284.48)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "554bdfdf-65e3-510c-8a78-4d0c516c9957")
+	)
+	(text "HOW IT WORKS (plain words)"
+		(exclude_from_sim no)
+		(at 12.7 172.72 0)
+		(effects
+			(font
+				(size 2 2)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "238c5fe0-ad9d-526b-88ab-1a4ba2accb72")
+	)
+	(text "1. POWER. The fused cigarette plug P1 (fuse value unknown) is the panel's only\n    power input. Its own lead is the two-wire cable W1 (brown = +, blue = -), which\n    enters under the deck at the notch corner. The drawing connects P1 to the\n    car outlet; its behavior with the car switched off needs checking.\n2. J+ AND J-. Under the deck everything joins at two points: J+ (on the USB\n    socket's + tab) and J- (on the 12 V socket's shell tab). The red and black\n    branches split off in heat-shrunk joints beside the socket plate (3502).\n3. SOCKETS. The USB socket X1 and the 12 V socket X2 are wired straight across\n    J+ and J-, so they work whenever the car outlet is live.\n4. WIRELESS CHARGER. The Qi pad U2 gets 12 V through a small two-pin plug J2.\n5. LIGHTS. Press SW1: it latches down and keeps the RGB lights on after release.\n    The drawing assumes SW1 interrupts the + feed to controller U1. U1 drives\n    three RGB LED heads through the in-line plugs J3. A phone app sets the colours.\n6. FIBRES. Heads H1 and H2 sit under the deck at the rear corners and shine into\n    side-glow fibres FO1 and FO2, which run along the top of the two side arms.\n    Head H3 has no fibre and lies loose in the car's tray by the gear lever.\n7. CLOCK. It has its own battery and no wires.\n8. CURRENT AT 12 V (approx.): USB up to 4-4.5 A, Qi pad 1.5-2 A, lights 0.5-1 A.\n    About 7 A in total, before anything is plugged into the 12 V socket X2.\n9. PROTECTION. Only the fuse in the plug tip and the car's own outlet fuse."
+		(exclude_from_sim no)
+		(at 12.7 178.435 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left top)
+		)
+		(uuid "744a7e0a-a777-5691-969b-b1ad4ba5ca1b")
+	)
+	(text "CONNECTIONS AND RATINGS TO VERIFY"
+		(exclude_from_sim no)
+		(at 12.7 236.22 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "5cd09493-4564-5ef9-af42-6e2c3a6ea80c")
+	)
+	(text "-  The fuse value printed in the plug tip.\n-  Whether the car's outlet stays live with the car fully off.\n-  Continuity from plug P1 through cable W1 to the supply junctions.\n-  The button terminal routing and which wire it breaks (+ assumed in this drawing).\n-  The return route of the Qi pad's - wire, and of the USB socket's - tab.\n-  Whether the red and black wires in one connector (IMG_3422) share a circuit.\n-  What the small black cylinder with holes is, on a cable beside the slot bar (3502)."
+		(exclude_from_sim no)
+		(at 12.7 241.3 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+			)
+			(justify left top)
+		)
+		(uuid "e18e221d-f42a-50d0-b18b-7ab824ba1f32")
+	)
+	(rectangle
+		(start 144.78 170.18)
+		(end 297.18 284.48)
+		(stroke
+			(width 0.35)
+			(type solid)
+			(color 200 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 240 235 1)
+		)
+		(uuid "1c5ed38b-4565-5b1b-9268-807822347706")
+	)
+	(text "ITEMS REQUIRING PHYSICAL INSPECTION"
+		(exclude_from_sim no)
+		(at 147.32 172.72 0)
+		(effects
+			(font
+				(size 2 2)
+				(bold yes)
+				(color 170 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "60403c17-3619-5514-b4dc-2ec4e34dec6c")
+	)
+	(text "These observations identify checks to make on the real wiring; photographs cannot verify continuity.\n\nWIRING AND CONNECTORS\n-  A red and a black wire share one lilac connector (IMG_3422): the colour code is broken.\n-  Two connectors on the 12 V socket's centre terminal (3482); one may sit on the stud (poor contact).\n-  One yellow connector on the USB socket body has no visible wire.\n-  Red wire ends at the button corner, one with a bare tip (IMG_3445, 3502): live if not in the button.\n-  Oversized blue connectors crimped on thin wire; some barrels hold two wires.\n\nFUSE AND CABLE SIZES\n-  Verify the installed fuse value and actual conductor sizes.\n-  Check protection against the ratings of every conductor, connector and load.\n-  Wire sizes estimated from photographs are not sufficient for this check.\n\nSAFETY AND PLACEMENT\n-  Bare 12 V centre stud and brass nut: a short if they touch the seat-belt buckle\n    (car earth) when the panel is turned over on the seat.\n-  Cables and the loose LED head lie across the EV MODE, drive-mode and EPB/HOLD\n    switches and the gear gate (3484); others run near the seat rails and buckle.\n-  Check that the wings do not block the seat-belt buckles or seat adjustment.\n-  If the outlet is live all the time, standby draw (controller, USB ring, Qi pad)\n    slowly drains the car's small 12 V battery.\n\nA proposed protection revision is on a separate sheet. It is not installed or validated."
+		(exclude_from_sim no)
+		(at 147.32 178.435 0)
+		(effects
+			(font
+				(size 1.75 1.75)
+			)
+			(justify left top)
+		)
+		(uuid "30e0abc8-c239-5ffa-bc05-32f6e320fa8f")
+	)
+	(rectangle
+		(start 300.99 170.18)
+		(end 407.67 228.6)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "8cfdafb5-5de9-579c-952b-b29a4890e787")
+	)
+	(text "ABOUT THIS DRAWING"
+		(exclude_from_sim no)
+		(at 303.53 172.72 0)
+		(effects
+			(font
+				(size 2 2)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "94825709-b42e-5217-9d08-131096cf8894")
+	)
+	(text "I designed the panel in 3D and\nplanned its circuit before fabrication.\nThen I cut, covered and wired it.\nPhotos document the completed panel\nand help verify this illustration.\n\nThis is a present-day explanatory\ndrawing of the completed panel.\nUse it with the physical photographs.\nDashed lines mark connections hidden\nin the evidence; values approximate.\nParts without library symbols are\nshown as labelled boxes."
+		(exclude_from_sim no)
+		(at 303.53 178.435 0)
+		(effects
+			(font
+				(size 1.85 1.85)
+			)
+			(justify left top)
+		)
+		(uuid "90298df0-0cf2-504e-bc5a-2a43e1de0458")
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

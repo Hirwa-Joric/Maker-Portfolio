@@ -1,0 +1,16 @@
+**/build/
+**/.vscode/
+.DS_Store
+**/.DS_Store
+**/.venv/
+**/__pycache__/
+*.pyc
+prototype/black_hole.png
+
+# Video exports belong with the separate Maker film.
+*.mp4
+*.mov
+*.mkv
+*.m4v
+*.webm
+*.avi

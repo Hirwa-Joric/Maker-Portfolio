@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "filename": "console_improved.kicad_pro",
+    "version": 3
+  },
+  "erc": {
+    "erc_exclusions": []
+  },
+  "schematic": {
+    "legacy_lib_dir": "",
+    "legacy_lib_list": []
+  },
+  "sheets": [
+    [
+      "b7641399-2501-56d4-94c1-7cec138379d3",
+      "Root"
+    ]
+  ]
+}
